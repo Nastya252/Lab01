@@ -10,7 +10,7 @@ Console.WriteLine($"Курс: {courseNumber}");
 Console.WriteLine($"Средний балл: {averageGrade}");
 Console.WriteLine($"Бюджетное место: {isBudget}");
 
-
+// считаем размеры комнаты
 Console.WriteLine();
 Console.WriteLine("Ремонт: комната");
 double roomWidth = 3.5;
@@ -21,7 +21,7 @@ Console.WriteLine($"Ширина: {roomWidth} м, длина: {roomLength} м");
 Console.WriteLine($"Площадь: {roomArea} кв.м");
 Console.WriteLine($"Периметр: {roomPerimeter} м");
 
-
+//считаем стоимость покупки ноутбука
 Console.WriteLine();
 Console.WriteLine("Покупка ноутбука в рассрочку");
 int laptopPrice = 6500;
@@ -43,7 +43,7 @@ double studentsPerGroupCorrect = (double)totalStudents / groupsCount;
 Console.WriteLine($"25 / 4 как int: {studentsPerGroupWrong}");
 Console.WriteLine($"25 / 4 как double: {studentsPerGroupCorrect}");
 
-
+//методы сбора строк
 Console.WriteLine();
 Console.WriteLine("Способы собрать строку");
 string firstName = "Анастасия";
@@ -60,6 +60,12 @@ Console.WriteLine(fullNameConcatMethod);
 Console.WriteLine($"Все три строки равны: {fullNameConcat == fullNameInterp && fullNameInterp == fullNameConcatMethod}");
 
 
+/*
+ Константы (const) в C# нужны, 
+ чтобы хранить значения, 
+ которые не должны меняться 
+ в течение работы программы
+*/
 Console.WriteLine();
 Console.WriteLine("Константы");
 const double VatRate = 0.20;

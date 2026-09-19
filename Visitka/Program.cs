@@ -14,8 +14,8 @@ string middlemark = Console.ReadLine();
 bool bigger = double.TryParse(middlemark, out double middle);
 Console.Write("Сколько недель прошло с начала учебы: ");
 string weekafter = Console.ReadLine();
-int weeksafter = int.Parse(weekafter);
-const int weeks = 17;
+int weeksafter = int.Parse(weekafter);//преобразуем число недель в числовой тип данных, чтобы в дальнейшем произвести вычисления
+const int weeks = 17; // принимаем количество недель за константу, потому что оно не меняется
 
 Console.WriteLine($"ФИО: {name}");
 Console.WriteLine($"Группа: {group}");
@@ -23,4 +23,4 @@ Console.WriteLine($"Курс: {coursse}");
 Console.WriteLine($"Специальность: {speciality}");
 Console.WriteLine("\n");
 Console.WriteLine($"Средний балл >= 4: {bigger}");
-Console.WriteLine($"Учебных недель осталось в семестре: {weeks - weeksafter}");
+Console.WriteLine($"Учебных недель осталось в семестре: {weeks - weeksafter}"); // вычисляем количество оставшихся недель
